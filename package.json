@@ -1,0 +1,23 @@
+{
+  "name": "gulp-dependo",
+  "version": "0.1.0",
+  "description": "A gulp plugin for visualisation CommonJS, AMD, or ES6 module dependencies",
+  "main": "index.js",
+  "keywords": [
+    "gulp",
+    "gulpplugin",
+    "dependo",
+    "visualization",
+    "graph"
+  ],
+  "author": "Oleksii Segeda",
+  "license": "MIT",
+  "dependencies": {
+    "dependo": "^0.1.6",
+    "gulp-util": "^3.0.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-replace": "^0.5.3"
+  }
+}
