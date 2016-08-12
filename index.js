@@ -19,9 +19,8 @@ module.exports = function(options, cb) {
 
   var outputPath = path.join(baseOutputPath, options.fileName);
   
-  var dependoOptions = {
-      format: 'amd'
-  };
+  var dependoOptions = options.dependoOptions || {};
+  dependoOptions.format = dependoOptions.format || 'amd';
 
   var dependo = new Dependo(targetPath, dependoOptions);
   var html = dependo.generateHtml();
