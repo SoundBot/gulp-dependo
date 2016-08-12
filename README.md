@@ -6,7 +6,11 @@ For more information check the [original dependo](https://www.npmjs.com/package/
 var dependo = require('gulp-dependo');
 
 gulp.task('visualize dependencies', function(cb) {
-	dependo({targetPath: './path-to-the-package', fileName: 'report.html', outputPath: '.'}, cb);
+	dependo({targetPath: './path-to-the-package', fileName: 'report.html', outputPath: '.', dependoOptions: {
+		// passed to Dependo
+		// default format is 'amd'
+		// remaining options default to Dependo defaults
+	} }, cb);
 });
 ```
 ## Licence
